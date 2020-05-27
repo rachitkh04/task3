@@ -52,7 +52,7 @@ model.add(Dense(10, activation='softmax'))
 model.compile(loss='categorical_crossentropy', metrics=['accuracy'], optimizer='adam')
 
 #hyperparameters
-epoch=5
+epoch=2
 # training the model for 5 epochs
 history = model.fit(
             X_train,Y_train, epochs=epoch,callbacks=[callbacks]
